@@ -22,6 +22,7 @@
 #define MAGIC 3
 #define UMLAUT 4
 
+
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -43,17 +44,25 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        // TODO make left/right specific
-        hrms: hrms_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp>, <&kp>;
-            /*hold-trigger-key-positions = <KEYS_MAIN_R KEYS_THUMBS_ALL>;*/
-            hold-trigger-on-release;
+// TODO probably move to separate file to be shared with imprint
+#define SHARED_HRM_COMPONENTS                 \
+        compatible = "zmk,behavior-hold-tap"; \
+        #binding-cells = <2>;                 \
+        flavor = "balanced";                  \
+        tapping-term-ms = <200>;              \
+        quick-tap-ms = <175>;                 \
+        require-prior-idle-ms = <30>;         \
+        bindings = <&kp>, <&kp>;              \
+        hold-trigger-on-release;
+
+        hrms_l: hrms_l_behavior {
+            SHARED_HRM_COMPONENTS
+            hold-trigger-key-positions = <KEYS_MAIN_R KEYS_THUMBS_ALL>;
+        };
+
+        hrms_r: hrms_r_behavior {
+            SHARED_HRM_COMPONENTS
+            hold-trigger-key-positions = <KEYS_MAIN_L KEYS_THUMBS_ALL>;
         };
 
     };
