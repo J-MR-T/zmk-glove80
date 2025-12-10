@@ -122,7 +122,7 @@
             &hrms LCTRL ESC        &hrms LGUI A    &hrms LALT S       &hrms LCTRL D       &hrms LSHIFT F       &kp G                               &kp H   &hrms RSHIFT J   &hrms RCTRL K       &hrms LALT L       &hrms RGUI SEMI    &lt UMLAUT SQT
 
             &kp LSHIFT     &kp Z    &kp X       &kp C       &kp V       &kp B   &kp BSPC    &kp DEL     &layer_td  &kp LGUI   &kp RCTRL &kp SPACE  &kp N   &kp M   &kp COMMA   &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAGIC 0 &none &kp LGUI     &kp LALT    &none           &mo NAV     &kp DEL     &kp LALT   &caps_word &mo MAGIC &kp RET    &none &none &kp LBKT    &kp RBKT    &kp PG_DN
+            &magic MAGIC 0 &none    &kp LGUI    &kp LALT    &none               &mo NAV     &kp DEL     &kp LALT   &caps_word &mo MAGIC &kp RET            &none   &kp LBKT    &kp RBKT    &none       &kp PG_DN
             >;
         };
 
