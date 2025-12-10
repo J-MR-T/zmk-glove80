@@ -122,12 +122,12 @@
 
 #define KEYS_ALL_L KEYS_MAIN_L KEYS_THUMBS_L
 
-#define KEYS_MAIN_R RC0 RC1 RC2 RC3 RC4 \
+#define KEYS_MAIN_R RC1 RC2 RC3 RC4 RC5 \
                     RN0 RN1 RN2 RN3 RN4 RN5 \
                     RT0 RT1 RT2 RT3 RT4 RT5 \
                     RM0 RM1 RM2 RM3 RM4 RM5 \
                     RB0 RB1 RB2 RB3 RB4 RB5 \
-                    RF0 RF1 RF2 RF3 RF4 
+                    RF1 RF2 RF3 RF4 RF5
 
 #define KEYS_THUMBS_R RH3 RH4 RH5 \
                       RH0 RH1 RH2
