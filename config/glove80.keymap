@@ -46,16 +46,7 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        hrms_l: hrms_l_behavior {
-            SHARED_HRM_COMPONENTS
-            hold-trigger-key-positions = <KEYS_MAIN_R KEYS_THUMBS_ALL>;
-        };
-
-        hrms_r: hrms_r_behavior {
-            SHARED_HRM_COMPONENTS
-            hold-trigger-key-positions = <KEYS_MAIN_L KEYS_THUMBS_ALL>;
-        };
-
+        HRM_BEHAVIORS
     };
 
     macros {
