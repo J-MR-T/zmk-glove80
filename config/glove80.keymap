@@ -15,14 +15,6 @@
 
 #include "shared/shared.h"
 
-#define HYPER LC(LS(LG(LALT)))
-
-// layers
-#define DEFAULT 0
-#define NAV 1
-#define SYMBOLS 2
-#define MAGIC 3
-#define UMLAUT 4
 
 
 / {
